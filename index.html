@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">   
+    <title>Estacionamento</title>
+ </head>
+ <body>
+    <div id="conteudo">
+    <div class="container">
+      <h1>Controle do Pátio</h1>
+      <div class="info">
+        <p class="nome">Modelo do Veículo</p> 
+        <p class="placa">Placa do Veículo</p>
+      </div>
+      <div class="input">
+        <input type="text" id="nome" placeholder="Digite o nome do veículo: ">
+        <input type="text" id="placa" placeholder="Digite a placa do veículo: ">
+        <button id="cadastrar">Cadastrar</button>
+      </div>
+    </div>
+    <div class="cadastro">
+      <table>
+        <thead>
+          <tr>
+            <th>MODELO</th>
+            <th>PLACA</th>
+            <th>DATA E HORA DA ENTRADA</th>
+            <th>REMOVER</th>
+          </tr>
+        </thead>
+       <tbody id="patio"></tbody>
+      </table>
+    </div>  
+    </div>
+   <script src="scripts.js"></script>
+ </body>
+</html>

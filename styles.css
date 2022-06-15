@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body { 
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(170, 170, 170), rgb(104, 106, 124));
+    justify-content: center;
+}
+
+.container {
+    background-color: rgb(33, 151, 126) ;
+    display: flex;
+    border: 2px solid black;
+    height: 15rem;
+    padding: 5rem;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-bottom: 1px;    
+}
+
+#conteudo {
+    display: flex;
+    align-items: center; /* horizontal */
+    flex-direction: column;
+    margin-top: 80px;
+    width: 672px;
+    max-width: 800px;
+}
+
+#cadastrar {
+    display: flex;
+    padding: 0.2rem;
+    background-color: rgb(4, 39, 39);
+    color: aliceblue;
+    width: auto;
+    margin-left: 10px;
+}
+
+.input {
+    display: flex;
+}
+
+.info {
+    display: flex;
+}
+    
+.nome {
+    width: 11rem;
+    font-size: 15px;
+}
+
+.placa {
+    margin-left: 15px;
+    width: 15rem;
+    font-size: 15px;
+}
+
+#nome {
+    display: flex;
+    margin-right: 5px;
+    width: flex;
+}
+
+#placa {
+    display: flex;
+    width: auto;  
+    margin-left: 5px;
+}
+
+h1 {
+    display: flex;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 60px;
+}
+
+th {
+    background-color: rgb(7, 0, 48);
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+tr {
+    background-color: rgb(0, 255, 221);
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 1px;
+}
+
+table {
+    background-image: linear-gradient(rgb(18, 0, 41), rgb(0, 17, 255), rgb(15, 0, 39));
+    border: 2px solid black;
+    padding: 0.5rem;
+    width: 672px;
+    max-width: 750px;
+    min-width: 300px;
+}
+
+@media (max-width: 670px) {
+    table {
+        width: 532px;
+        margin: auto;
+    }
+
+    .container {
+        width: 532px;
+    }
+}
+
+@media (max-width: 540px) {
+    table {
+        width: 400px;
+        margin: auto;
+    }
+
+    .container {
+        width: 400px;
+    }
+    
+    .nome {
+        width: 10rem;
+    }
+
+    .placa {
+        width: 10rem;
+    }
+
+    #nome {
+        width: 10rem;
+    }
+
+    #placa {
+        width: 10rem;
+    }
+}
+
