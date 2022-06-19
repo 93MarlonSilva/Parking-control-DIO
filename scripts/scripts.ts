@@ -53,7 +53,7 @@ interface Veiculo {
           const tempo = calcTempo(new Date().getTime() - new Date(entrada).getTime());
           
           if(
-            !confirm(`O veiculo ${nome} permaneceu no patio por ${tempo}. Confirma a Saida?`)
+            !confirm(`O veículo ${nome} permaneceu no pátio por ${tempo}! Confirmar a Saída?`)
           )
           return;
 
@@ -82,7 +82,7 @@ interface Veiculo {
         console.log(nome, placa);
 
         if(!nome || !placa){
-            alert("Os campos nome e placa são obrigatótios!");
+            alert("Os campos modelo e placa são obrigatórios!");
             return;
         }
 

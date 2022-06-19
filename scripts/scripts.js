@@ -34,7 +34,7 @@
         function remover(placa) {
             const { entrada, nome } = ler().find(veiculo => veiculo.placa === placa);
             const tempo = calcTempo(new Date().getTime() - new Date(entrada).getTime());
-            if (!confirm(`O veiculo ${nome} permaneceu no patio por ${tempo}. Confirma a Saida?`))
+            if (!confirm(`O veículo ${nome} permaneceu no pátio por ${tempo}! Confirmar a Saída?`))
                 return;
             salvar(ler().filter((veiculo) => veiculo.placa !== placa));
             render();
@@ -55,7 +55,7 @@
         const placa = (_b = $("#placa")) === null || _b === void 0 ? void 0 : _b.value;
         console.log(nome, placa);
         if (!nome || !placa) {
-            alert("Os campos nome e placa são obrigatótios!");
+            alert("Os campos modelo e placa são obrigatórios!");
             return;
         }
         patio().adicionar({ nome, placa, entrada: new Date().toISOString() }, true);

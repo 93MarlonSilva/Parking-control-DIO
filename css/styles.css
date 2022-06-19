@@ -10,18 +10,18 @@
 body { 
     display: flex;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-image: linear-gradient(rgb(255, 255, 255), rgb(170, 170, 170), rgb(104, 106, 124));
     justify-content: center;
 }
 
 .container {
-    background-color: rgb(33, 151, 126) ;
+    background-image: url('/img/img.png') ;
     display: flex;
     border: 2px solid black;
     height: 15rem;
     padding: 5rem;
-    width: 100%;
+    width: 50em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -34,9 +34,10 @@ body {
     align-items: center; /* horizontal */
     flex-direction: column;
     margin-top: 80px;
-    width: 672px;
-    max-width: 800px;
+    max-width: 70em;
+
 }
+
 
 #cadastrar {
     display: flex;
@@ -58,12 +59,14 @@ body {
 .nome {
     width: 11rem;
     font-size: 15px;
+    font-weight: bold;
 }
 
 .placa {
     margin-left: 15px;
     width: 15rem;
     font-size: 15px;
+    font-weight: bold;
 }
 
 #nome {
@@ -93,6 +96,7 @@ th {
     text-align: center;
     border: 1px solid black;
     font-size: 16px;
+    height: 2rem;
 }
 
 tr {
@@ -106,46 +110,32 @@ table {
     background-image: linear-gradient(rgb(18, 0, 41), rgb(0, 17, 255), rgb(15, 0, 39));
     border: 2px solid black;
     padding: 0.5rem;
-    width: 672px;
-    max-width: 750px;
-    min-width: 300px;
+    width: 50em;
+    max-width: 70em;
+    min-width: 30em;
 }
 
-@media (max-width: 670px) {
-    table {
-        width: 532px;
-        margin: auto;
-    }
-
-    .container {
-        width: 532px;
-    }
+footer {
+	width: 100%;
+	background-color: #4e545c;
+	padding: 10px;
+	color: #ffffff;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	font-weight: 400;
 }
 
-@media (max-width: 540px) {
-    table {
-        width: 400px;
-        margin: auto;
-    }
-
-    .container {
-        width: 400px;
-    }
-    
-    .nome {
-        width: 10rem;
-    }
-
-    .placa {
-        width: 10rem;
-    }
-
-    #nome {
-        width: 10rem;
-    }
-
-    #placa {
-        width: 10rem;
-    }
+#div-patio {
+    background-image: url('/img/table.png');
+    border: 0.1px solid black;
+    height: 20rem;
 }
 
+@media (max-width: 715px) {
+    body {
+        min-width: 50em;
+    }
+
+
+}
