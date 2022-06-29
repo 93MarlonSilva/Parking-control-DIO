@@ -1,6 +1,6 @@
 # Parking Control - developed with Typescript
 
-<h4>This repository is the delivery of the react code challenge Digital Inovation One<h4>
+<h4>This repository is the delivery of the Typescript code challenge Digital Inovation One<h4>
 
 ## Features
 
