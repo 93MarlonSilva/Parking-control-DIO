@@ -53,7 +53,7 @@ interface Veiculo {
           const tempo = calcTempo(new Date().getTime() - new Date(entrada).getTime());
           
           if(
-            !confirm(`O veículo ${nome} permaneceu no pátio por ${tempo}! Confirmar a Saída?`)
+            !confirm(`O veículo ${nome.toUpperCase()} permaneceu no pátio por ${tempo.toUpperCase()}! Confirmar a Saída?`)
           )
           return;
 
