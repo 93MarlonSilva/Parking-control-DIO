@@ -28,8 +28,8 @@ interface Veiculo {
             const row = document.createElement("tr");
 
             row.innerHTML = `
-              <td>${veiculo.nome}</td>
-              <td>${veiculo.placa}</td>
+              <td>${veiculo.nome.toUpperCase()}</td>
+              <td>${veiculo.placa.toUpperCase()}</td>
               <td>${veiculo.entrada}</td>
               <td> 
                 <button class="delete" data-placa="${veiculo.placa}">X</button>
@@ -53,7 +53,7 @@ interface Veiculo {
           const tempo = calcTempo(new Date().getTime() - new Date(entrada).getTime());
           
           if(
-            !confirm(`O veículo ${nome.toUpperCase()} permaneceu no pátio por ${tempo.toUpperCase()}! Confirmar a Saída?`)
+            !confirm(`O veículo modelo: ${nome.toUpperCase()} placa: ${placa.toUpperCase()} permaneceu no pátio por ${tempo.toUpperCase()}! Deseja confirmar a saída?`)
           )
           return;
 
