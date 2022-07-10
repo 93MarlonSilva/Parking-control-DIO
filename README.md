@@ -15,5 +15,5 @@
 
 ## Available Scripts
 
-In the project directory, you can run:  'npx -p typescript tsc' to transpile the typescript code!
+In the project directory, you can run:  `npx -p typescript tsc` to transpile the typescript code!
 
