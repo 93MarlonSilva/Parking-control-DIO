@@ -19,7 +19,8 @@ body {
 .container {
     background-image: url('/src/img/img.png') ;
     display: flex;
-    border: 2px solid black;
+    border: 5px solid rgb(255, 255, 255);
+    border-bottom: none;
     height: 15rem;
     padding: 5rem;
     width: 60em;
@@ -71,7 +72,7 @@ body {
 }
 
 .placa {
-    margin-left: 15px;
+    margin-left: 45px;
     width: 15rem;
     font-size: 15px;
     font-weight: bold;
@@ -81,12 +82,14 @@ body {
     display: flex;
     margin-right: 5px;
     width: flex;
+    border-radius: 10px;
 }
 
 #placa {
     display: flex;
     width: auto;  
     margin-left: 5px;
+    border-radius: 10px;
 }
 
 h1 {
@@ -121,7 +124,7 @@ tr {
 
 table {
     background-image: linear-gradient(rgb(18, 0, 41), rgb(0, 17, 255), rgb(15, 0, 39));
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
     padding: 0.5rem;
     width: 60em;
     max-width: 70em;
@@ -137,11 +140,13 @@ footer {
 	bottom: 0;
 	text-align: center;
 	font-weight: 400;
+    border: 1px solid white;
 }
 
 #div-patio {
     background-image: url('/src/img/table.png');
-    border: 0.1px solid black;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
     height: 20rem;
 }
 
