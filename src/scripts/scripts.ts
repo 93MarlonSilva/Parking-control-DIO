@@ -4,7 +4,7 @@ interface Veiculo {
     entrada: Date | string;
 }
 
-(function () {
+(function () {  // Converte para minutos e segundos o tempo do veículo ficou no pátio
     const $ = (query: string): HTMLInputElement | null =>
      document.querySelector(query);
 
@@ -15,16 +15,16 @@ interface Veiculo {
         return `${min}m e ${sec}s`;
      }
 
-     function patio() {
+     function patio() { 
         function ler(): Veiculo[]{
             return localStorage.patio ? JSON.parse(localStorage.patio) : [];
         }
      
-        function salvar(veiculos: Veiculo[]){
+        function salvar(veiculos: Veiculo[]){ // Salva a entrada no local storage
             localStorage.setItem("patio", JSON.stringify(veiculos));
         }
 
-        function adicionar(veiculo: Veiculo, salva?: boolean){
+        function adicionar(veiculo: Veiculo, salva?: boolean){ // Adiciona os dados da entrada
             const row = document.createElement("tr");
 
             row.innerHTML = `
@@ -36,8 +36,8 @@ interface Veiculo {
               </td>
             `;
 
-            row.querySelector(".delete")?.addEventListener("click", function () {
-                remover(this.dataset.placa);
+            row.querySelector(".delete")?.addEventListener("click", function () { // Adiciona o evento click no botão criado
+                remover(this.dataset.placa); // Ao clicar no botão remove o cadastro
             });
 
             $("#patio")?.appendChild(row);
@@ -50,10 +50,10 @@ interface Veiculo {
             veiculo => veiculo.placa === placa
           );
 
-          const tempo = calcTempo(new Date().getTime() - new Date(entrada).getTime());
+          const tempo = calcTempo(new Date().getTime() - new Date(entrada).getTime()); // Ao remover retorna o tempo que o veículo ficou no pátio
           
           if(
-            !confirm(`O veículo modelo: ${nome.toUpperCase()} placa: ${placa.toUpperCase()} permaneceu no pátio por ${tempo.toUpperCase()}! Deseja confirmar a saída?`)
+            !confirm(`O veículo modelo: ${nome.toUpperCase()} placa: ${placa.toUpperCase()} permaneceu no pátio por ${tempo.toUpperCase()}! Deseja confirmar a saída?`) // Se confimar ele remove o cadastro 
           )
           return;
 
@@ -76,7 +76,7 @@ interface Veiculo {
 
      patio().render();
 
-    $("#cadastrar")?.addEventListener('click', () => {
+    $("#cadastrar")?.addEventListener('click', () => { // Adiciona o evento click no botão Cadastrar
         const nome = $("#nome")?.value;
         const placa = $("#placa")?.value;
         console.log(nome, placa);
